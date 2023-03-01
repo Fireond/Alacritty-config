@@ -8,22 +8,36 @@ selection:
   save_to_clipboard: true
 
 window:
-  opacity: 0.85
+  opacity: 0.80
   padding:
-    x: 16
-    y: 16
-  dimension:
-    column: 640
-    lines: 360
+    x: 6
+    y: 6
+  dimensions:
+    columns: 133
+    lines: 40
   dynamic_padding: false
   decorations: buttonless
 
 font:
   normal:
-    family: "DejaVuSansMono Nerd Font Mono"
+    family: "DejaVuSansMono Nerd Font"
     style: "Book"
-  size: 24.0
-  
+  bold:
+    family: "DejaVuSansMono Nerd Font"
+    style: "Bold"
+  italic:
+    family: "DejaVuSansMono Nerd Font"
+    style: "Oblique"
+  bold_italic:
+    family: "DejaVuSansMono Nerd Font"
+    style: "Bold Oblique"
+
+  size: 20.0
+
+cursor:
+  style:
+    shape: Block
+
 key_bindings:
   # Rename the current tmux window
   - { key: Comma, mods: Command, chars: "\x02\x2c" }
